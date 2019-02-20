@@ -17,7 +17,7 @@ class PokemonDetail extends Component {
         }
     }
 
-    areDetailsLoaded(pokemon, species) {
+    areDetailsLoading(pokemon, species) {
         return !pokemon || 
             !pokemon.name || 
             !species.habitat || 
@@ -28,7 +28,7 @@ class PokemonDetail extends Component {
     render() {
         const { pokemon, species } = this.props;
 
-        if (this.areDetailsLoaded(pokemon, species)) return (
+        if (this.areDetailsLoading(pokemon, species)) return (
             <section className="pokemon-detail">
                 <div><h2><br /><br /><br /><br /><br />
                     Choose a Pokemon
