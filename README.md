@@ -1,6 +1,6 @@
 ## Pokédex
 
-Pokédex is a web application designed to help players of the Pokemon games look up key information about the 151 classic Pokémon. Users can search Pokémon by name, type or ID and find useful categorical information and statistics such as I.D., types, height, weight and habitat.
+Pokédex is a web application designed to help players of the Pokémon games look up key information about the 151 classic Pokémon. Users can search Pokémon by name, type or ID and find useful categorical information and statistics such as I.D., types, height, weight and habitat.
 
 ### Technologies
 
