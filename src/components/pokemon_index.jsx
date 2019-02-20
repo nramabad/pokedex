@@ -38,6 +38,14 @@ class PokemonIndex extends Component {
             poke.url.slice(34, -1) === term || 
             pokeOfTypes.includes(poke.name)) ;
 
+        if (pokemon.length === 0) {
+            return (
+                <section className="pokedex" >
+                    <ul id="no-results">No Results</ul>
+                </section>
+            );
+        } 
+
         return (
             <section className="pokedex">                
                 <ul>

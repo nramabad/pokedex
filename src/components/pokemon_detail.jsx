@@ -51,14 +51,14 @@ class PokemonDetail extends Component {
                     <div>
                         <h2>{pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1)}</h2>
                     </div>
-                    
+
                     <div id="flavor-text">
                         {species.flavor_text_entries
                             .filter (entry => entry.language.name === "en")[0].flavor_text}
                     </div>
 
                     <div><b>I.D.:</b> {pokemon.id}</div>
-                    <div><b>Types:</b> 
+                    <div><b>Types: </b>
                         {pokemon.types ? pokemon.types.map(el => el.type.name).join(", ") : pokemon.types}
                     </div>
                     <div><b>Height:</b> {pokemon.height}</div>

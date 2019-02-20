@@ -15,11 +15,14 @@ class PokemonIndexItem extends React.Component {
 		}
 	}
 
+	formatTypes(types) {
+		return types.map(el => el.type.name).join(", ");
+	}
+
 	render() {
 		let { pokemon } = this.props;
 		const name = pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1)
-		// make fn called formatTypes
-		const types = pokemon.types ? pokemon.types.map(el => el.type.name).join(", ") : pokemon.types
+		const types = pokemon.types ? this.formatTypes(pokemon.types) : pokemon.types
 
 		return (
 				<li className="pokemon-index-item" onMouseOver={this.handleHover()}>
