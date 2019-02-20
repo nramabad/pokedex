@@ -1,9 +1,6 @@
 import React from 'react';
 
 class PokemonIndexItem extends React.Component {
-	constructor(props){
-		super(props);
-	}
 
 	handleHover(){
 		let { pokemon } = this.props;

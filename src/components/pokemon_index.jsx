@@ -62,7 +62,7 @@ class PokemonIndex extends Component {
     }
 }
 
-const mapStateToProps = (state, ownProps) => {
+const mapStateToProps = (state) => {
     const pokemon = Object.values(state.entities.pokemon);
     const typesInfo = Object.values(state.entities.types);
     return ({

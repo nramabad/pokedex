@@ -6,12 +6,16 @@ import { withRouter } from 'react-router-dom';
 
 class PokemonDetail extends Component {
     componentDidMount() {
-        this.props.requestOnePokemon(this.props.match.params.pokemon);
-        this.props.requestOneSpecies(this.props.match.params.pokemon);
+        const pokemon = this.props.match.params.pokemon
+        if (pokemon !== 'home' && pokemon !== undefined) {
+            this.props.requestOnePokemon(this.props.match.params.pokemon);
+            this.props.requestOneSpecies(this.props.match.params.pokemon);
+        }
     }
 
     componentDidUpdate(prevProps) {
-        if (prevProps.match.params.pokemon !== this.props.match.params.pokemon) {
+        const pokemon = this.props.match.params.pokemon
+        if (prevProps.match.params.pokemon !== pokemon && pokemon !== 'home' && pokemon !== undefined) {
             this.props.requestOnePokemon(this.props.match.params.pokemon);
             this.props.requestOneSpecies(this.props.match.params.pokemon);
         }
