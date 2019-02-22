@@ -14,11 +14,28 @@ Apart from scrolling through the Pokédex Index to find a Pokémon of interest, 
 
 ### Running on localhost:3000
 
+#### Prep: Install Node.js
+
+Installing Node and NPM on Windows and macOS is straightforward because you can just use the provided installer:
+
+Download the required installer:
+Go to https://nodejs.org/en/
+Select the button to download the LTS build that is "Recommended for most users".
+Install Node by double-clicking on the downloaded file and following the installation prompts.
+
+#### Version Verification: `node -v`
+
+Pokédex application was built with Node.js v8.9.4
+
 #### 1) `unzip pokedex && cd pokedex`
 
-Uncompresses pokedex zip folder and enters the pokedex directory. Once, in the project directory, you can run:
+Uncompresses pokedex zip folder and enters the pokedex directory. Once, in the project directory, you can run the following:
 
-#### 2) `npm start`
+#### 2) `npm install`
+
+Installs all relevant npm packages for node backend
+
+#### 3) `npm start`
 
 Runs the app in the development mode.<br>
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
